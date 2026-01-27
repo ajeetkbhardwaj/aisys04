@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
-from langfuse.callback import CallbackHandler
+from langfuse.langchain import CallbackHandler
 import sys
 
 # --- PATH HANDLER ---
