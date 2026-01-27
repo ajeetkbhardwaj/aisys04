@@ -3,4 +3,4 @@ langchain-openai
 langchain-core
 langfuse
 python-dotenv
-sqlite3
+#sqlite3
