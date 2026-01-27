@@ -1,0 +1,6 @@
+langgraph
+langchain-openai
+langchain-core
+langfuse
+python-dotenv
+sqlite3
