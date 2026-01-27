@@ -10,7 +10,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import components
 from state import ClaimState
-#from tools.db_tools import setup_db
+from tools.db_tools import setup_db
 from nodes.vision_node import vision_node
 from nodes.crm_node import crm_node
 from nodes.logic_node import logic_node
