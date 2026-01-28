@@ -83,7 +83,7 @@ def run_simulation():
     # Initial State: A broken item claim
     initial_state = {
         "claim_id": "ORD-123", # This ID exists in DB with $1500 value
-        "image_path": "broken_laptop_description_text", # Simulating vision
+        "image_paths": ["broken_laptop_description_text"], # Simulating vision
         "messages": []
     }
 

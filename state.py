@@ -8,7 +8,7 @@ state.py : defines the shared memory for all our agents will read and write to.
 class ClaimState(TypedDict):
     # Inputs
     claim_id: str
-    image_path: str  # Path to image or text description for simulation
+    image_paths: List[str]  # List of paths to images/videos or text description
     
     # Vision Node Outputs
     is_valid_damage: Optional[bool]
