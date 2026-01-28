@@ -102,7 +102,12 @@ def run_simulation():
         print(f"Current Logic Status: {snapshot.values['refund_status']}")
         
         # Simulate a Manager reviewing the data externally
-        user_input = input("\n[MANAGER UI] High value claim detected. Approve refund? (y/n): ")
+        try:
+            user_input = input("\n[MANAGER UI] High value claim detected. Approve refund? (y/n): ")
+        except EOFError:
+            print("\n⚠️  Input not supported (likely running in Streamlit). Defaulting to 'No'.")
+            print("    👉 To use the Web UI, please run: streamlit run app.py")
+            user_input = "n"
         
         if user_input.lower() == 'y':
             print("\n--- ▶️ MANAGER APPROVED. RESUMING GRAPH... ---")
