@@ -3,4 +3,6 @@ langchain-openai
 langchain-core
 langfuse
 python-dotenv
+opencv-python
+streamlit
 #sqlite3

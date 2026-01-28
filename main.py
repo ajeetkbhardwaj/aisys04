@@ -19,7 +19,7 @@ from nodes.refund_node import refund_node
 
 # Load Environment
 load_dotenv()
-#setup_db() # Init the SQLite DB
+setup_db() # Init the SQLite DB
 
 # --- 1. Define Routing Logic ---
 def route_decision(state: ClaimState):
